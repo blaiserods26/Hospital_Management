@@ -44,7 +44,7 @@ if (username == null) {
       });
   });
 } else {
-  // means register page is open
+  // means register page is open and now it will also push data into the database
 
   submitBtn.addEventListener("click", () => {
     fetch("/register-user", {
