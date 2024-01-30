@@ -1,10 +1,11 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const bodyParser = require("body-parser");
 app.set("port", process.env.PORT || 3000); //dynamic port
 const intialPath = path.join(__dirname, "public");
-//app.use(bodyParser.json());
-//app.use(express.static(intialPath));
+app.use(bodyParser.json());
+app.use(express.static(intialPath));
 app.get("/", (req, res) => {
   res.sendFile(path.join(intialPath, "index.html"));
 });
@@ -13,11 +14,11 @@ app.get("/login", (req, res) => {
   res.sendFile(path.join(intialPath, "login.html"));
 });
 
-app.get("/register", (req, res) => {
-  res.sendFile(path.join(intialPath, "register.html"));
+app.get("/signup", (req, res) => {
+  res.sendFile(path.join(intialPath, "signup.html"));
 });
 
-app.post("/register-user", (req, res) => {
+app.post("/signup-user", (req, res) => {
   const { name, email, password } = req.body;
 
   if (!name.length || !email.length || !password.length) {
