@@ -1,7 +1,8 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-app.set("port", process.env.PORT || 3000); //dynamic port
+app.set("port", process.env.PORT || 3000); //dynamic port 
+// dynamic port wont work since isn't defined on .env file 
 const intialPath = path.join(__dirname, "public");
 //app.use(bodyParser.json());
 //app.use(express.static(intialPath));
