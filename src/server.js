@@ -1,7 +1,7 @@
-const username = document.querySelector(".username") || null;
+const username = document.querySelector(".uname") //|| null;
 const email = document.querySelector(".email");
-const password = document.querySelector(".password");
-const confirmpassword = document.querySelector(".confirmpassword");
+const password = document.querySelector(".psw");
+const confirmpassword = document.querySelector(".signupbtn").getElementsByClassName(signupbtn);
 const submitBtn = document.querySelector(".submitBtn");
 
 const validateData = (data) => {
