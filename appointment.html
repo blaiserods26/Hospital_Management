@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+ 
+<html>
+	<head>
+		<title>SignUp</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main1.css"/>
+	</head>
+	<body class="left-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header Wrapper -->
+				<div id="header-wrapper">
+					<div class="container">
+
+						<!-- Header -->
+				<div id="header-wrapper">
+					<div class="container">
+
+						<!-- Header -->
+							<header id="header">
+								<div class="inner">
+
+									<!-- Logo -->
+										<h1><a href="index.html" id="logo">FORTIS</a></h1>
+
+									<!-- Nav -->
+										<nav id="nav">
+											<ul>
+												<li><a href="index.html">Home</a></li>
+												<li>
+													<a href="#">Departments</a>
+													<ul>
+														<li><a href="dental.html">Dental Faculty</a></li>
+														<li><a href="cardio.html">Cardiology Faculty</a></li>
+														<li>
+															<a href="testDepart.html">Testing Department</a>
+															<ul>
+																<li><a href="notFound.html">Sonography</a></li>
+																<li><a href="#">X - Ray</a></li>
+																<li><a href="notFound.html">2-D Echo</a></li>
+																<li><a href="notFound.html">MRI Scan</a></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<li class="current_page_item"><a href="Signup.html">Sign Up</a></li>
+												<li><a href="Login.html">Login</a></li>
+											</ul>
+										</nav>
+
+								</div>
+							</header>
+					</div>
+				</div>
+
+		<!-- Main -->
+		<main>
+			<h1 style="-webkit-text-fill-color: white; font-size: large;">Book Your Appointment</h1>
+			<form id="appointment-form" style="-webkit-text-fill-color: white;" >
+					<div style="-webkit-text-fill-color: white;">
+						<label for="department">Department:</label>
+						<select style="-webkit-text-fill-color: black;  margin-bottom: 10px;" id="department" name="department">
+							<option value="cardiology">Cardiology</option>
+							<option value="neurology">Neurology</option>
+							<option value="general_practitioner">General Practitioner</option>
+							<option  value="dentistry">Dentistry</option>
+							<option value="ophthalmology">Ophthalmology</option>
+							<option selected="selected" value="null"> --Please select a department--
+							</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="doctor">Doctor:</label>
+						<select style="-webkit-text-fill-color: black;  margin-bottom: 10px;" id="doctor" name="doctor">
+							<option value="Dr.Sean">Dr. Sean Periera</option>
+							<option value="Dr.Rhine">Dr. Rhine Periera</option>
+							<option value="Dr.Sean">Dr. Blaise Rodrigues</option>
+							<option value="Dr.Sean">Dr. Vanessa Rodrigues</option>
+							<option value="Dr.Sean">Dr. David Potharur</option>
+							<option selected="selected" value="null">-- Please select a Doctor --</option>
+						</select>
+					</div>
+					<div class="date">
+						<div class="form-group">
+							<label for="date">Date:</label>
+							<input type="date" id="date" name="date" style="-webkit-text-fill-color: black;  margin-bottom: 10px;" required>
+						</div>    
+					</div>
+					<div class="form-group">
+						<label for="time">Time:</label>
+						<select style="-webkit-text-fill-color: black;  margin-bottom: 10px;" id="time" name="time">
+							<optgroup label="Morning Shift (8am-12pm)">
+								<option value="08:30">8:30 AM - 9:15 AM</option>
+								<option value="09:45">9:45 AM - 10:30 AM</option>
+								<option value="10:45">10:45 AM - 11:30 AM</option>
+							</optgroup>
+							<optgroup label="Afternoon Shift (12pm-3pm)">   
+								<option value="12:15">12:15 PM - 1:00 PM</option>
+								<option value="13:15">1:15 PM -  2:00 PM</option>
+								<option value="14:15">2:15 PM -  3:00 PM</option>
+							</optgroup>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="name">Patient Name:</label>
+						<input type="text" id="name" name="name" style="-webkit-text-fill-color: black; margin-bottom: 10px;" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Email Address:</label>
+						<input type="email" id="email" name="email" style="-webkit-text-fill-color: black;  margin-bottom: 10px;" required>
+					</div>
+					<div class="form-group">
+						<label for="phone">Phone Number:</label>
+						<input type="tel" id="phone" name="phone" style="-webkit-text-fill-color: black;  margin-bottom: 20px;" required>
+					</div>
+			  <button type="submit" onclick="check();">Book Appointment</button>
+			</form>
+		  </main>
+			<!-- Footer Wrapper -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="container">
+					<div class="row">
+						<div class="col-6 col-12-medium imp-medium">
+							<!-- Contact -->
+								<section>
+									<h2>Get in touch</h2>
+									<div>
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<dl class="contact">
+													<dt>Email</dt>
+													<dd><a href="mailto:fortis.hosp@fortis.com">fortis.hosp@fortis.com</a></dd>
+												</dl>
+											</div>
+											<div class="col-6 col-12-small">
+												<dl class="contact">
+													<dt>Address</dt>
+													<dd>
+														Fortis Hospital<br />
+														Bandstand, Bandra, Mumbai <br />
+														India
+													</dd>
+													<dt>Phone</dt>
+													<dd>+91 9175933634</dd>
+												</dl>
+											</div>
+										</div>
+									</div>
+								</section>
+							
+						</div>
+					</div>
+				</footer>
+			</div>
+
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
