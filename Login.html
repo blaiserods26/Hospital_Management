@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <title>Login</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link
+      rel="stylesheet"
+      href="assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/mainlogin.css" />
+    <link
+      rel="website icon"
+      type="jpg"
+      href="assets/webfonts/Fortis.jpg" />
+  </head>
 
-<head>
-  <title>Login</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="assets/css/mainlogin.css" />
-  <link  rel="website icon" type="jpg" href="assets/webfonts/Fortis.jpg"/>
-</head>
-
-<body class="left-sidebar is-preload">
-  <div id="page-wrapper">
-    <!-- Header -->
-    <div id="header-wrapper">
-      <div class="container">
-        <!-- Header -->
-        <header id="header">
-          <div class="inner">
-            <!-- Logo -->
-            <h1>
-              <a href="index.html" id="logo">FORTIS</a>
-            </h1>
+  <body class="left-sidebar is-preload">
+    <div id="page-wrapper">
+      <!-- Header -->
+      <div id="header-wrapper">
+        <div class="container">
+          <!-- Header -->
+          <header id="header">
+            <div class="inner">
+              <!-- Logo -->
+              <h1>
+                <a
+                  href="index.html"
+                  id="logo"
+                  >FORTIS</a
+                >
+              </h1>
 
             <!-- Nav -->
             <nav id="nav">
@@ -31,15 +43,15 @@
                 <li>
                   <a href="#">Departments</a>
                   <ul>
-                    <li><a href="dental.html">Dental Faculty</a></li>
-                    <li><a href="cardio.html">Cardiology Faculty</a></li>
+                    <li><a href="Login.html">Dental Faculty</a></li>
+                    <li><a href="Login.html">Cardiology Faculty</a></li>
                     <li>
-                      <a href="testDepart.html">Testing Department</a>
+                      <a href="Login.html">Testing Department</a>
                       <ul>
-                        <li><a href="notFound.html">Sonography</a></li>
-                        <li><a href="#">X - Ray</a></li>
-                        <li><a href="notFound.html">2-D Echo</a></li>
-                        <li><a href="notFound.html">MRI Scan</a></li>
+                        <li><a href="Login.html">Sonography</a></li>
+                        <li><a href="Login.html">X - Ray</a></li>
+                        <li><a href="#">2-D Echo</a></li>
+                        <li><a href="Login.html">MRI Scan</a></li>
                       </ul>
                     </li>
                   </ul>
@@ -60,64 +72,79 @@
         <label for="uname"><b>Username</b></label>
         <input type="text" placeholder="Enter Username" name="uname" required />
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required />
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required />
+          <label for="submitBtn"></label>
+          <button type="submit">Login</button>
+        </div>
 
-        <button type="submit">Login</button>
+        <div
+          class="container"
+          style="background-color: rgb(40, 37, 37)">
+          <a href="index.html"
+            ><button
+              type="button"
+              class="cancelbtn">
+              Cancel
+            </button></a
+          >
+          <span class="psw"><a href="Signup.html">Didn't SignUP</a></span>
+        </div>
+      </form>
+      <!-- Footer Wrapper -->
+      <div id="footer-wrapper">
+        <footer
+          id="footer"
+          class="container">
+          <div class="row">
+            <div class="col-6 col-12-medium imp-medium">
+              <!-- Contact -->
+              <section>
+                <h2>Get in touch</h2>
+                <div>
+                  <div class="row">
+                    <div class="col-6 col-12-small">
+                      <dl class="contact">
+                        <dt>Email</dt>
+                        <dd>
+                          <a href="mailto:fortis.hosp@fortis.com"
+                            >fortis.hosp@fortis.com</a
+                          >
+                        </dd>
+                        <dt>Phone</dt>
+                        <dd>+91 9175933634</dd>
+                      </dl>
+                    </div>
+                    <div class="col-6 col-12-small">
+                      <dl class="contact">
+                        <dt>Address</dt>
+                        <dd>
+                          Fortis Hospital<br />
+                          Bandstand, Bandra,<br />
+                          Mumbai, India.
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </footer>
       </div>
-
-      <div class="container" style="background-color: rgb(40, 37, 37)">
-        <a href="index.html"><button type="button" class="cancelbtn">Cancel</button></a>
-        <span class="psw"><a href="Signup.html">Didn't SignUP</a></span>
-      </div>
-    </form>
-    <!-- Footer Wrapper -->
-			<div id="footer-wrapper">
-				<footer id="footer" class="container">
-					<div class="row">
-						<div class="col-6 col-12-medium imp-medium">
-							<!-- Contact -->
-								<section>
-									<h2>Get in touch</h2>
-									<div>
-										<div class="row">
-											<div class="col-6 col-12-small">
-												<dl class="contact">
-													<dt>Email</dt>
-													<dd><a href="mailto:fortis.hosp@fortis.com">fortis.hosp@fortis.com</a></dd>
-													<dt>Phone</dt>
-													<dd>+91 9175933634</dd>
-												</dl>
-											</div>
-											<div class="col-6 col-12-small">
-												<dl class="contact">
-													<dt>Address</dt>
-													<dd>
-														Fortis Hospital<br />
-														Bandstand, Bandra,<br />
-														Mumbai, India.
-													</dd>
-													
-												</dl>
-											</div>
-										</div>
-									</div>
-								</section>
-							
-						</div>
-					</div>
-				</footer>
     </div>
-  </div>
 
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.dropotron.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="src/server.js"></script>
-</body>
-
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="src/server.js"></script>
+  </body>
 </html>
