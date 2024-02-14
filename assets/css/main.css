@@ -2421,5 +2421,22 @@ input, select, textarea {
 				margin-top: 0;
 				padding: 3em 0 1em 0;
 			}
+		
+		/* CSS for larger screens */
+			body {
+				margin: 0;
+				font-family: Arial, sans-serif;
+			}
 
+			.container {
+				width: 80%;
+				margin: auto;
+			}
+
+			/* CSS for mobile screens */
+			@media only screen and (max-width: 600px) {
+				.container {
+					width: 100%;
+				}
+			}
 	}
